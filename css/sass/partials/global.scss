@@ -1,0 +1,158 @@
+html {
+	-webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: $font-family-base;
+	color: #4d868f;
+	font-weight: 300;
+	overflow-x: hidden;
+	background: #013e51;
+	background: -moz-linear-gradient(left,  #013e51 0%, #115469 50%, #013e51 100%);
+	background: -webkit-linear-gradient(left,  #013e51 0%,#115469 50%,#013e51 100%);
+	background: linear-gradient(to right,  #013e51 0%,#115469 50%,#013e51 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#013e51', endColorstr='#013e51',GradientType=1 );
+}
+
+h1 {
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.3em;
+	margin: .5em 0;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin: .5em 0;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5em;
+	margin: 1em 0;
+}
+
+p,
+.mainContent li {
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: $line-height-base;
+	margin: 1em 0;
+
+  &.sm {
+  	font-size: 12px;
+  }
+}
+
+body .mainContent ul,
+body .mainContent ol {
+	margin-left: 20px;
+}
+
+body .mainContent li {
+	margin: 0 0 .5em 0;
+	list-style: disc;
+}
+
+body .mainContent ol li {
+	list-style: decimal;
+}
+
+a {
+	transition: color ease .2s;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none !important;
+}
+
+.yellow {
+	color: #e4a52d;
+}
+
+.red {
+	color: #ee3a56;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+img {
+	max-width: 100%;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+.alignRight {
+	text-align: right;
+}
+
+.mobileBackTop {
+	display: none;
+}
+
+.flex {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-wrap: no-wrap;
+	-webkit-flex-wrap: no-wrap;
+	-ms-flex-wrap: no-wrap;
+}
+
+.max1200 {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.max900 {
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#paneWrapper {
+	transition: all ease .3s;
+	position: relative;
+	min-height: 100vh;
+}
+
+#paneWrapper .greyBG {
+	opacity: 0;
+	transition: opacity ease .3s;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background: #bbbbbb;
+	background: -moz-linear-gradient(left,  #bbbbbb 0%, #ffffff 50%, #bbbbbb 100%);
+	background: -webkit-linear-gradient(left,  #bbbbbb 0%,#ffffff 50%,#bbbbbb 100%);
+	background: linear-gradient(to right,  #bbbbbb 0%,#ffffff 50%,#bbbbbb 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbbbbb', endColorstr='#bbbbbb',GradientType=1 );
+}
+
+body[data-active-color=grey] #paneWrapper .greyBG {
+	opacity: 1;
+}

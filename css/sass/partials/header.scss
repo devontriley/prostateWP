@@ -1,0 +1,141 @@
+#massgov {
+	background: #fff;
+	height: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+  @media(min-width: 768px) {
+    height: 8.5rem;
+    line-height: 8.5rem;
+  }
+
+  img {
+  	vertical-align: middle;
+    height: 3rem;
+    @media(min-width: 768px) {
+      height: auto;
+    }
+  }
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			float: left;
+			font-size: 14px;
+			margin-left: 20px;
+			@media(min-width: 768px) {
+				font-size: 18px;
+			}
+		}
+
+		a {
+			color: #013e51;
+		}
+
+		i {
+			vertical-align: middle;
+			font-size: 16px;
+			margin-right: 7px;
+		}
+	}
+}
+
+#main-header {
+	position: relative;
+	z-index: 1;
+	padding: $padding-vertical-base $padding-horizontal-base;
+	border-top: .1rem solid #aec7ce;
+	border-bottom: 1rem solid #013e51;
+	box-shadow: 0 5rem 5rem rgba(0,0,0,0.3);
+	background: #dfedf1;
+	-webkit-transition: all .4s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -moz-transition: all .4s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  -o-transition: all .4s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+  transition: all .4s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+  & > * {
+    max-width: $wrapper-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #logo {
+    font-size: 2rem;
+  	display: flex;
+  	align-items: center;
+		max-width: 90rem;
+		line-height: 1.2em;
+    @media(min-width: 768px) {
+      font-size: 4rem;
+    }
+
+    img {
+      display: none;
+      @media(min-width: 768px) {
+        margin-right: 35px;
+      }
+    }
+
+    strong {
+    	font-weight: 700;
+    	color: #013e51;
+    }
+  }
+
+  .intro {
+		max-width: 90rem;
+    padding: 2rem 0 0 0;
+    margin: 2rem auto 0 auto;
+  	border-top: .1rem solid #aec7ce;
+  	line-height: $line-height-base;
+    @media(min-width: 768px) {
+      padding: 4rem 0 0 0;
+      margin: 4rem auto 0 auto;
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+			font-weight: 300;
+			@media(min-width: 768px) {
+				font-size: 2.4rem;
+			}
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+      	margin-bottom: 0;
+      }
+
+      strong {
+      	color: #013e51;
+      }
+    }
+  }
+
+  &.small {
+  	padding: 20px;
+
+    #logo {
+    	font-size: 24px;
+
+      img {
+      	height: 65px;
+      	margin-right: 25px;
+      }
+    }
+
+    .intro {
+    	display: none;
+    }
+  }
+}

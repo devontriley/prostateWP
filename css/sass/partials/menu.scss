@@ -1,0 +1,102 @@
+#mainMenuContainer {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9000;
+
+	&.active {
+		display: block;
+	}
+}
+
+#mainMenu {
+	position: fixed;
+	right: -400px;
+	top: 0;
+	width: 400px;
+	height: 100vh;
+	padding: 60px 40px;
+	background: #013e51;
+	color: #fff;
+	z-index: 10000;
+	-webkit-transition: all .3s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    -moz-transition: all .3s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    -o-transition: all .3s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    transition: all .3s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+	.active & {
+		right: 0;
+	}
+}
+
+#mainMenu .top {
+	padding: 0;
+	margin: 0;
+}
+
+#mainMenu .top > li {
+	font-size: 24px;
+	line-height: 1.3em;
+	margin-bottom: 20px;
+	font-weight: 700;
+	list-style: none;
+	margin: 0 0 1em 0;
+	padding: 0;
+}
+
+#mainMenu li.closeMenu {
+	margin-bottom: 40px;
+	text-align: right;
+}
+
+#mainMenu li.closeMenu i {
+	margin-right: 5px;
+	font-size: 24px;
+}
+
+#mainMenu li.closeMenu a:after {
+	display: none;
+}
+
+#mainMenu .top > li > a {
+	color: #fff;
+	position: relative;
+}
+
+#mainMenu .top > li > a:after {
+	content: '\f078';
+	font-family: 'FontAwesome';
+	font-size: 18px;
+	position: absolute;
+	right: -30px;
+	transition: all ease .2s;
+	color: #4b858f;
+}
+
+#mainMenu .top > li.active > a:after {
+	content: '\f077';
+}
+
+#mainMenu li ul {
+	display: none;
+	margin: 20px 0 0 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+}
+
+#mainMenu li ul li {
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+#mainMenu li ul li a {
+	color: #4d868f;
+}
+
+#mainMenu li ul li a:hover {
+	color: #fff;
+}
